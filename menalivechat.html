@@ -1,4 +1,5 @@
 <html>
+	<!-- servqa1 -->
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
 		background-color: #27509B;
@@ -34,16 +35,16 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://empower.my.salesforce.com',
-			'https://empower.my.salesforce-sites.com/ConsumerCare',
+			'https://empower--servqa1.sandbox.my.salesforce.com',
+			'https://empower--servqa1.sandbox.my.salesforce-sites.com/ConsumerCare',
 			gslbBaseURL,
-			'00D58000000JirI',
+			'00DMT0000000U6m',
 			'MENA_ConCare_Michelin_English_Team',
 			{
-				baseLiveAgentContentURL: 'https://c.la1-c2-fra.salesforceliveagent.com/content',
+				baseLiveAgentContentURL: 'https://c.la1-c1cs-fra.salesforceliveagent.com/content',
 				deploymentId: '5721i000000brMN',
 				buttonId: '5731i000000Xja6',
-				baseLiveAgentURL: 'https://d.la1-c2-fra.salesforceliveagent.com/chat',
+				baseLiveAgentURL: 'https://d.la1-c1cs-fra.salesforceliveagent.com/chat',
 				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I1i000000fyliEAA_189e4193ab5',
 				isOfflineSupportEnabled: false
 			}
@@ -52,7 +53,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://empower.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://empower--servqa1.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
