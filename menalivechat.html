@@ -29,8 +29,6 @@
 		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
 		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
 
-		    //var lang = navigator.language || navigator.userLanguage;
-		    var baseURL = window.location.hostname; 
 		    
 		    //Save Web Site url from where the chat button is displayed
 		     embedded_svc.settings.extraPrechatFormDetails = [
@@ -41,8 +39,6 @@
 		            displayToAgent: !0
 		          }
 		        ] 
-
-		embedded_svc.settings.storageDomain = baseURL;
 		
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
