@@ -33,12 +33,14 @@
 		    var baseURL = window.location.hostname; 
 		    
 		    //Save Web Site url from where the chat button is displayed
-		    /*embedded_svc.settings.extraPrechatFormDetails = [{  
-			"label":"Web Site",
-			"value":baseURL,
-			"transcriptFields":[ "Web_Site__c" ],
-			"displayToAgent":false
-		    }];*/ 
+		     embedded_svc.settings.extraPrechatFormDetails = [
+		          {
+		            label: "Web Site",
+		            value: window.location.href,
+		            transcriptFields: ["Web_Site__c"],
+		            displayToAgent: !0
+		          }
+		        ] 
 
 		embedded_svc.settings.storageDomain = baseURL;
 		
