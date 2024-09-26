@@ -33,27 +33,27 @@
 		embedded_svc.settings.extraPrechatFormDetails = [
 		        {
 		            label: "Web Site",
-		            value: "https://www.tyreplus-me.com/en/uae",
+		            value: "https://mts.michelin.com.sa/en",
 		            transcriptFields: ["Web_Site__c"],
 		            displayToAgent: !0
 			}
-		] 
-		
+		] 		
+
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://empower--uat.sandbox.my.salesforce.com',
-			'https://empower--uat.sandbox.my.salesforce-sites.com/ConsumerCare',
+			'https://empower--devmihirk.sandbox.my.salesforce.com',
+			'https://empower--devmihirk.sandbox.my.salesforce-sites.com/ConsumerCare',
 			gslbBaseURL,
-			'00D9b000004Qmmi',
-			'MENA_ConCare_Tyreplus_English_Team',
+			'00Dbd000000G8EX',
+			'MENA_Consumer_Care_MTS_English_Chat_Team',
 			{
-				baseLiveAgentContentURL: 'https://c.la12s-core1.sfdc-yzvdd4.salesforceliveagent.com/content',
+				baseLiveAgentContentURL: 'https://c.la12s-core1.sfdc-urlt2q.salesforceliveagent.com/content',
 				deploymentId: '5721i000000brMN',
-				buttonId: '5739b000000erYf',
-				baseLiveAgentURL: 'https://d.la12s-core1.sfdc-yzvdd4.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I9b0000007p7REAQ_18dc602aa6e',
+				buttonId: '573bd0000003sof',
+				baseLiveAgentURL: 'https://d.la12s-core1.sfdc-urlt2q.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04Ibd0000000fETEAY_1922d8135a2',
 				isOfflineSupportEnabled: false
 			}
 		);
@@ -61,7 +61,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://empower--uat.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://empower--devmihirk.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
