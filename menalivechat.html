@@ -33,10 +33,10 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://empower--concarepoc.sandbox.my.salesforce.com',
-			'https://empower--concarepoc.sandbox.my.salesforce-sites.com/ConsumerCare',
+			'https://empower--devmihirk.sandbox.my.salesforce.com',
+			'https://empower--devmihirk.sandbox.my.salesforce-sites.com/ConsumerCare',
 			gslbBaseURL,
-			'00Dbd0000000NmD',
+			'00Dbd000000G8EX',
 			'MENA_ConCare_Tyreplus_English_Team',
 			{
 				baseLiveAgentContentURL: 'https://c.la12s-core1.sfdc-urlt2q.salesforceliveagent.com/content',
@@ -51,7 +51,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://empower--concarepoc.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://empower--devmihirk.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
