@@ -1,10 +1,10 @@
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
-		background-color: #005290;
+		background-color: #27509B;
 		font-family: "Arial", sans-serif;
 	}
 	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #005290;
+		outline: 1px solid #27509B;
 	}
 </style>
 
@@ -14,8 +14,8 @@
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
 
-		embedded_svc.settings.defaultMinimizedText = 'Agent Online'; //(Defaults to Chat with an Expert)
-		embedded_svc.settings.disabledMinimizedText = 'Offline'; //(Defaults to Agent Offline)
+		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
+		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
 
 		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
 		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
@@ -34,16 +34,16 @@
 
 		embedded_svc.init(
 			'https://empower--concarepoc.sandbox.my.salesforce.com',
-			'https://empower--concarepoc.sandbox.my.site.com/b2cIdentity',
+			'https://empower--concarepoc.sandbox.my.salesforce-sites.com/ConsumerCare',
 			gslbBaseURL,
 			'00Dbd0000000NmD',
-			'Consumer_Care_India_Chatbot',
+			'IndiaConsumer_Care_English_Chat',
 			{
 				baseLiveAgentContentURL: 'https://c.la12s-core1.sfdc-urlt2q.salesforceliveagent.com/content',
 				deploymentId: '5721i000000brMN',
-				buttonId: '573bd00000001aP',
+				buttonId: '5731i000000CikR',
 				baseLiveAgentURL: 'https://d.la12s-core1.sfdc-urlt2q.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'ConsumerCareLiveChat',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I1i000000KzZoEAK_17ccf55eb13',
 				isOfflineSupportEnabled: false
 			}
 		);
