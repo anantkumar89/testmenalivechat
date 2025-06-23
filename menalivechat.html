@@ -29,11 +29,12 @@
 		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
 		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
 
+		//Save Web Site url from where the chat button is displayed
 		embedded_svc.settings.extraPrechatFormDetails = [
 		        {
-		            label: "Web URL",
+		            label: "Web Site",
 		            value: "www.michelinman.com",
-		            transcriptFields: ["Web_URL__c"],
+		            transcriptFields: ["Web_Site__c"],
 		            displayToAgent: !0
 				}
 			]
